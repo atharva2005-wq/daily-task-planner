@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Task Planner</title>
+  <link rel="stylesheet" href="daily-planner.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Task Manager</h2>
+    <h3>Enter Task:</h3><input type="text" name="task" id="task" placeholder="Enter task...">
+    <h3>Select priority:</h3><select name="priority-select" id="priority-select">
+      <option value="priority-low">Low</option>
+      <option value="priority-medium">Medium</option>
+      <option value="priority-high">High</option>
+    </select>
+    <h3>Set due date:</h3><input type="datetime-local" name="due-date" id="due-date">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="task-list"></ul>
+    <button id="clear-all">Clear All Tasks</button>
+  </div>
+  <script src="daily-planner.js"></script>
+</body>
+</html>

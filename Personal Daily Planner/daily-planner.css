@@ -1,0 +1,118 @@
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(#6e8efb, #a777e3);
+    }
+
+    .container{
+      margin-left: 5%;
+      margin-right: 5%;
+      width: 100%;
+      max-width: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    input, select, button{
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      border: 1px solid black;
+    }
+
+    button{
+      background: lightcoral;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover{
+      background: coral;
+    }
+
+    .delete-btn {
+  margin-left: 10px;
+  background-color: lightcoral;
+  color: white;
+  border: 1px solid black;
+  padding: 12px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: coral;
+}
+
+.edit-btn {
+  margin-left: 10px;
+  background-color: lightcoral;
+  color: white;
+  border: 1px solid black;
+  padding: 12px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: coral;
+}
+
+    ul{
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    li{
+      background: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+  #task-list li.priority-high {
+  border-left: 4px solid red;
+  padding-left: 10px;
+}
+
+#task-list li.priority-medium {
+  border-left: 4px solid orange;
+  padding-left: 10px;
+}
+
+#task-list li.priority-low {
+  border-left: 4px solid green;
+  padding-left: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.complete-checkbox {
+  height: 30px;
+  align-items:flex-start;
+}
+
+.task-buttons button {
+  margin-right: 10px;
+}
