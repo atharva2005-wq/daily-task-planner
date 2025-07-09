@@ -72,6 +72,7 @@ function displayTask(task) {
   });
 
   const taskContent = document.createElement("div");
+taskContent.className = "task-content";
   const priorityText = task.priority.replace("priority-", "");
   const formattedPriority = priorityText.charAt(0).toUpperCase() + priorityText.slice(1);
   const formattedDue = task.due ? new Date(task.due).toLocaleString() : "No due date";
